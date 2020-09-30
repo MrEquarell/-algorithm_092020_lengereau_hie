@@ -1,6 +1,6 @@
-# algorithm_092020_nom1_nom2
+# Fibonacci Algo
 
-Modèle du projet du cours d'algorithmes
+Projet Algo Fibinacci - Python
 
 ## Description
 

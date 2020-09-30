@@ -44,16 +44,17 @@ class FibonacciHeap(Heap):
     """
 
     def insert(self, value: int) -> None:
-        """
-        Ajoute une valeur dans l'arbre
-        """
-        pass
+       
+        self.value[]
+        value.insert(6)
+        value.insert(2)
+        value.insert(5)
+        value.insert(1)
 
     def find_min(self) -> int:
-        """
-        Retourne la valeur minimum dans l'arbre
-        """
-        pass
+        
+        print("min value element : ", min(value))
+
 
     def delete_min(self) -> int:
         """
