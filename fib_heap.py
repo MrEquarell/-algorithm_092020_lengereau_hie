@@ -41,21 +41,39 @@ class FibonacciHeap(Heap):
     https://en.wikipedia.org/wiki/Fibonacci_heap
     L'implémentation est décrite en anglais : https://en.wikipedia.org/wiki/Fibonacci_heap#Implementation_of_operations
     et en français : https://fr.wikipedia.org/wiki/Tas_de_Fibonacci#Implémentation_des_opérations
+
+    Faire une classe supplémentaire appelée Node :
+    -> Liste de node pour ensuite faire .value
+
+    Une racine est un noeud sans parent (rien au dessus)
+    
+    Garder une liste avec toutes les racines + fonction consolidate -> regarde la liste des racines
+
+    Node / rajouter 2 variables (left/right) = 2 branches en dessous
+    -> 1 enfant à la node = +1 compteur
+
+    None = rien valeur nulle
+
+    Insérer la class node + fonction consolidate dans la class fib_heap
     """
 
     def insert(self, value: int) -> None:
-    
-        self.value = value
-        value = [1, 2, 3]
-        value.insert(6)
-        value.insert(2)
-        value.insert(5)
-        value.insert(1)
+
+        # class Node:
+
+        #     def __init__(self, heap):
+        #         self.heap = heap
+        #         self.left = None
+        #         self.right = None
+        #         self.parent = None
+
+        #     def __str__(self):
+        #         return str(self.heap)
 
     def find_min(self) -> int:
         
-        print("min value element : ", min(value))
-        pass
+        # print("min value element : ", min(value))
+        # pass
 
     def delete_min(self) -> int:
         """
