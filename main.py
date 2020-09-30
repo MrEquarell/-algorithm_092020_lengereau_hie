@@ -44,8 +44,9 @@ class FibonacciHeap(Heap):
     """
 
     def insert(self, value: int) -> None:
-       
-        self.value[]
+    
+        self.value = value
+        value = [1, 2, 3]
         value.insert(6)
         value.insert(2)
         value.insert(5)
@@ -54,7 +55,7 @@ class FibonacciHeap(Heap):
     def find_min(self) -> int:
         
         print("min value element : ", min(value))
-
+        pass
 
     def delete_min(self) -> int:
         """
