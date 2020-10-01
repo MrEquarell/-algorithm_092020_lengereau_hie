@@ -37,15 +37,11 @@ class Heap(object):
 
 class FibonacciHeap(Heap):
 
-
     def insert(self, value: int) -> None:
 
         FibonacciHeap = []
         FibonacciHeap = [ 1, 2, 3, 4, 5, 6, 7 ]
-        print(FibonacciHeap)
-    
         FibonacciHeap.insert(10)
-        
         print(FibonacciHeap)
 
 
