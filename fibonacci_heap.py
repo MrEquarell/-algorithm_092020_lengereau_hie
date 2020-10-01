@@ -35,14 +35,35 @@ class Heap(object):
         pass
 
 
+class Tree(object):
+    def __init__(self):
+        self.nodes = []
+        self.count = 0
+
+    def add_value(self, value):
+        self.nodes.append(value)
+        self.count = self.count + 1
+
+    def __repr__(self):
+        return repr(self.nodes)
+
 class FibonacciHeap(Heap):
+
+    def __init__(self):
+        self.nodes = []
+        self.count = 0
 
     def insert(self, value: int) -> None:
 
-        FibonacciHeap = []
-        FibonacciHeap = [ 1, 2, 3, 4, 5, 6, 7 ]
-        FibonacciHeap.insert(10)
-        print(FibonacciHeap)
+        new_tree = Tree()
+        new_tree.add_value(value)
+        self.nodes.append(new_tree)
+        self.count = self.count + 1
+        
+        #FibonacciHeap = []
+        #FibonacciHeap = [ 1, 2, 3, 4, 5, 6, 7 ]
+        #FibonacciHeap.insert(10)
+        #print(FibonacciHeap)
 
 
     def find_min(self) -> int:
@@ -53,3 +74,15 @@ class FibonacciHeap(Heap):
 
     def merge(self, fibonnaci_heap: Heap) -> None:
         pass
+
+new_heap = FibonacciHeap()
+data = [10, 12, 14, 52, 54, 101, 152, 4, 7, 17]
+
+# data = [[10, [17]], [12], [14], [52], [101], [152], [4], [7]]
+# data = [[10, [17]], [14], [52], [101], [152], [4], [7, [12]]]
+
+for value in data:
+    new_heap.insert(value)
+
+print(new_heap.nodes)
+print(new_heap.find_min())
