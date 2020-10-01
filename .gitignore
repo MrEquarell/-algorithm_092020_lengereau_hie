@@ -1,8 +1,11 @@
 #files
 refone.py
-refone_decrypt.py
 reftwo.py
 refthree.py
+notes.py
+
+#misc
+.vscode
 
 #production
 /explorer
