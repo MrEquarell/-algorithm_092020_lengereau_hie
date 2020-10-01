@@ -72,7 +72,7 @@ class FibonacciHeap(Heap):
 
 fheap = FibonacciHeap()
 
-data = [1, 3, 12, 31, 5, 8, 11, 4, 0, 7]
+data = [2, 3, 12, 56, 5, 11]
 
 for value in data:
     fheap.insert(value)
